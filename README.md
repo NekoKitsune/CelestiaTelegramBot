@@ -10,3 +10,5 @@ it is essential to run the following
 ```
 pip3 install python-telegram-bot nekos.py NekoMimi
 ```
+
+Celestia Discord version will never be open sourced
