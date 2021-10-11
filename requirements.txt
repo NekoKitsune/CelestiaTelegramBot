@@ -1,0 +1,6 @@
+python-telegram-bot
+nekos.py
+RedditReader
+google
+BeautifulSoup4
+NekoMimi
