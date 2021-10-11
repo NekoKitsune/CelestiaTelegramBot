@@ -1,3 +1,5 @@
+TOKEN = 'PASTEtokenHERE'
+
 import NekoMimi as nm
 print(nm.banner('Celestia'))
 
@@ -81,14 +83,14 @@ def debuger(update, context):
 
 def AI(update: Update, context: CallbackContext):
     message = update.message.text
-    url = requests.get('http://api.brainshop.ai/get?bid=157706&key=2r2S1ySAmDZHMxOQ&uid=[666]&msg='+message)
+    url = requests.get('http://api.brainshop.ai/get?bid=BRAINID&key=BRAINKEY&uid=[666]&msg='+message)
     decode = json.loads(url.text)
     ai = decode['cnt']
     update.message.reply_text(ai)
 
 def main():
     print('Started main function')
-    updater = Updater('2001386775:AAF33D8i90Hl9rmNhRAJXsYygYuMWOfEw84')
+    updater = Updater(TOKEN)
     dp = updater.dispatcher
     addCom(dp,'meme',meme)
     dp.add_handler(CommandHandler('neko',neko))
