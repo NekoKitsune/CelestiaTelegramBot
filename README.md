@@ -8,7 +8,7 @@ also go grab a brainshop ai token and brainID
 
 it is essential to run the following
 ```
-pip3 install python-telegram-bot nekos.py NekoMimi
+pip3 install -r requirements.txt
 ```
 
 Celestia Discord version will never be open sourced
